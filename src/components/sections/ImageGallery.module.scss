@@ -20,6 +20,14 @@
             left: 0;
             position: absolute;
             object-fit: cover;
+            filter: brightness(1)
         }
+
+          
+          img:hover {
+            /* 마우스를 올리면 보이게 처리 */
+            cursor: pointer;
+            filter: brightness(0.5)
+          }
     }
 }
