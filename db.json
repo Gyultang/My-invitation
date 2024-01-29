@@ -1,7 +1,7 @@
 {
   "party": {
     "id": 0,
-    "date": "2023-08-27T13:00:00",
+    "date": "2024-03-18T13:00:00",
     "location": {
       "lat": 37.28163212324522,
       "lng": 127.0303329958705,
@@ -53,15 +53,15 @@
       ]
     },
     "bride": {
-      "name": "이지혜",
+      "name": "김규리",
       "account": {
         "bankName": "농협",
         "accountNumber": "352-0952-4669-11"
       },
-      "phoneNumber": "01022345124",
+      "phoneNumber": "01012345678",
       "parents": [
         {
-          "name": "이훈이",
+          "name": "김미지",
           "account": {
             "bankName": "카카오뱅크",
             "accountNumber": "3333-1112-11932"
@@ -69,7 +69,7 @@
           "phoneNumber": "01024333423"
         },
         {
-          "name": "정유리",
+          "name": "김창완",
           "account": {
             "bankName": "국민",
             "accountNumber": "222-19-8842-472"

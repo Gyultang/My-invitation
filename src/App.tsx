@@ -1,12 +1,17 @@
 import classNames from 'classnames/bind'
 import { useEffect, useState } from 'react'
 import styles from './App.module.scss'
-import FullScreenMessage from './components/shared/FullScreenMessage'
+import FullScreenMessage from '@shared/FullScreenMessage'
+
+import Heading from './components/sections/Heading'
+import Video from './components/sections/Video'
+
+import { Card } from '@models/card'
 
 const cx = classNames.bind(styles)
 
 function App() {
-  const [card, setCard] = useState(null)
+  const [card, setCard] = useState<Card | null>(null)
   const [loading, setLoading] = useState(false)
   const [error, setError] = useState(false)
 
@@ -40,8 +45,17 @@ function App() {
   if (error) {
     return <FullScreenMessage type="error" />
   }
-
-  return <div className={cx('container')}>{JSON.stringify(card)}</div>
+  if (card == null) {
+    return null
+  }
+  const { date } = card
+  return (
+    <div className={cx('container')}>
+      <Heading date={date} />
+      <Video />
+      {JSON.stringify(card)}
+    </div>
+  )
 }
 
 export default App
