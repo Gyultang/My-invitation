@@ -7,6 +7,7 @@ import Heading from './components/sections/Heading'
 import Video from './components/sections/Video'
 
 import { Card } from '@models/card'
+import ImageGallery from './components/sections/ImageGallery'
 
 const cx = classNames.bind(styles)
 
@@ -48,11 +49,12 @@ function App() {
   if (card == null) {
     return null
   }
-  const { date } = card
+  const { date, galleryImages } = card
   return (
     <div className={cx('container')}>
       <Heading date={date} />
       <Video />
+      <ImageGallery images={galleryImages} />
       {JSON.stringify(card)}
     </div>
   )
