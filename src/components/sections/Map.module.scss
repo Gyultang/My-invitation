@@ -1,0 +1,42 @@
+.wrap-header{
+    display: flex;
+    flex-direction: column;
+
+    .txt-title{
+        margin-bottom: 16px;
+    }
+    .txt-sub{
+        font-weight: 400;
+        font-size: 18px;
+    }
+}
+
+.wrap-map{
+    position: relative;
+
+    .map{
+        width: 100%;
+        height: 250px;
+    }
+
+    .btn-find-way{
+        border: 0.8px solid var(--black);
+        padding: 8px 32px;
+        z-index: 2;
+        position: absolute;
+        bottom: 24px;
+        left: 50%;
+        transform: translateX(-50%);
+        background-color: #fff;
+        color: var(--black);
+        font-size: 18px;
+        font-weight: 700;
+        text-decoration: none;
+        border-radius: 32px;
+    }
+    .btn-find-way:hover{
+        border:none;
+        color: #fff;
+        background: var(--pink);
+    }
+}
