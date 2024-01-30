@@ -5,6 +5,7 @@ import { useEffect, useRef } from 'react'
 import { Location } from '@models/card'
 
 const cx = classNames.bind(styles)
+
 declare global {
   interface Window {
     kakao: any
