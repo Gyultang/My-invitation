@@ -1,0 +1,23 @@
+@import '@scss/utils.scss';
+
+.container{
+   @include txt-content;
+    .wrap-introMain{
+        font-size: 22px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 42px 0 8px;
+        font-weight: bold;
+    }
+    .wrap-info{
+        flex-direction: column;
+        margin-bottom: 40px;
+    }
+    .wrap-info p{
+        font-size: 20px;
+    }
+    .icon-party{
+        @include icon-size;
+    }
+}

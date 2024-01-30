@@ -5,9 +5,10 @@ import FullScreenMessage from '@shared/FullScreenMessage'
 
 import Heading from './components/sections/Heading'
 import Video from './components/sections/Video'
-
+import Intro from './components/sections/Intro'
 import { Card } from '@models/card'
 import ImageGallery from './components/sections/ImageGallery'
+import Invitation from './components/sections/Invitation'
 
 const cx = classNames.bind(styles)
 
@@ -49,11 +50,24 @@ function App() {
   if (card == null) {
     return null
   }
-  const { date, galleryImages } = card
+  const {
+    date,
+    galleryImages,
+    bride,
+    location,
+    message: { intro, invitation },
+  } = card
   return (
     <div className={cx('container')}>
       <Heading date={date} />
       <Video />
+      <Intro
+        master={bride.name}
+        locationName={location.name}
+        date={date}
+        message={intro}
+      />
+      <Invitation message={invitation} />
       <ImageGallery images={galleryImages} />
       {JSON.stringify(card)}
     </div>

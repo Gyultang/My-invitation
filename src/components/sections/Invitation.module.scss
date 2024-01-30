@@ -1,0 +1,10 @@
+@import '@scss/utils.scss';
+
+.container{
+   @include txt-content; 
+
+    .icon-drink{
+        @include icon-size;
+        margin: 70px 0 8px;
+    }
+}

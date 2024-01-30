@@ -1,0 +1,10 @@
+@mixin txt-content{
+    text-align: center;
+    line-height: 26px;
+}
+
+@mixin icon-size{
+    width: 25px;
+    height: 25px;
+    margin-bottom: 10px;
+}
