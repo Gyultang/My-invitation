@@ -10,7 +10,8 @@ export default function Section({
 }: {
   children: React.ReactNode
   className?: string
-  title?: string
+  //title이 컴포넌트로받을수있게끔(ReactNode안에 string이 기본적으로포함되어있다.)
+  title?: React.ReactNode
 }) {
   return (
     <section className={cx(['container', className])}>
