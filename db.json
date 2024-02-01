@@ -55,10 +55,11 @@
     "bride": {
       "name": "김규리",
       "account": {
-        "bankName": "농협",
-        "accountNumber": "352-0952-4669-11"
+        "bankName": "우리",
+        "accountNumber": "1002-253-419008",
+        "kakaopayLink":"https://qr.kakaopay.com/Ej8YREAoV "
       },
-      "phoneNumber": "01012345678",
+      "phoneNumber": "01040482733",
       "parents": [
         {
           "name": "김미지",

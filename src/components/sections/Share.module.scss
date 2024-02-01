@@ -1,0 +1,13 @@
+.wrap-share{
+    display: flex;
+    justify-content: center;
+
+    button{
+        cursor: pointer;
+        margin-right: 10px;
+    }
+    .icon-copy{
+        transform: scaleX(-1);
+
+    }
+}

@@ -55,8 +55,7 @@ function ContactInfo({ name, account, phoneNumber }: Person) {
                 alert('복사가 완료되었습니다.')
               }}
             >
-              {' '}
-              <button className={cx('btn')}>계좌복사</button>
+              <button className={cx('btn')}>복사</button>
             </CopyToClipboard>
           </li>
           {account.kakaopayLink != null ? (
@@ -76,3 +75,5 @@ function ContactInfo({ name, account, phoneNumber }: Person) {
     </div>
   )
 }
+// 에러 확인필요
+// https://www.npmjs.com/package/react-copy-to-clipboard
