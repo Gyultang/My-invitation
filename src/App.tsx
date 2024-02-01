@@ -13,6 +13,7 @@ import Calendar from './components/sections/Calendar'
 import Map from './components/sections/Map'
 import Contact from './components/sections/Contact'
 import Share from './components/sections/Share'
+import Modal from './components/shared/Modal'
 
 const cx = classNames.bind(styles)
 
@@ -77,6 +78,17 @@ function App() {
       <Map location={location} />
       <Contact master={bride} />
       <Share master={bride.name} date={date} />
+      {/* <Modal
+        open={true}
+        title="현재 참석자"
+        body={
+          <div>
+            <input></input>
+          </div>
+        }
+        onLeftButtonClick={() => console.log('왼쪽클릭')}
+        onRightButtonClick={() => console.log('오른쪽클릭')}
+      /> */}
     </div>
   )
 }
