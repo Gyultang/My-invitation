@@ -79,17 +79,6 @@ function App() {
       <Map location={location} />
       <Contact master={bride} />
       <Share master={bride.name} date={date} />
-      {/* <Modal
-        open={true}
-        title="현재 참석자"
-        body={
-          <div>
-            <input></input>
-          </div>
-        }
-        onLeftButtonClick={() => console.log('왼쪽클릭')}
-        onRightButtonClick={() => console.log('오른쪽클릭')}
-      /> */}
       <AttendCountModal party={card} />
     </div>
   )

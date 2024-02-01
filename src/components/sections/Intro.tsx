@@ -25,7 +25,10 @@ export default function Intro({
   return (
     <Section className={cx('container')}>
       <div className={cx('wrap-introMain')}>
-        <p>{master}가 주최하는 파티에 당신을 초대합니다!</p>
+        <p>
+          26살이 되는 특별한 날을 맞이하여,
+          <br /> 여러분을 생일 파티에 초대합니다!
+        </p>
       </div>
 
       <div className={cx('wrap-info')}>

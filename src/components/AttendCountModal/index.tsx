@@ -19,6 +19,7 @@ export default function AttendCountModal({ party }: { party: Card }) {
       body: (
         <div>
           <input
+            className="modal-input"
             ref={$input}
             placeholder="참석 가능 인원을 추가해주세요"
             style={{ width: '100%', outline: 'none' }}
@@ -27,14 +28,7 @@ export default function AttendCountModal({ party }: { party: Card }) {
         </div>
       ),
       onLeftButtonClick: () => {
-        // if (Number($input.current.value) > 0) {
-        //   localStorage.setItem('@have-seen-modal', 'true') //@have-seen-modal을 true로 변경하여 로컬에 저장
-        //   close()
-        // } else {
-        //   close()
-        // }
-        console.log('왼저장값', $input.current)
-        localStorage.setItem('@have-seen-modal', 'true') //@have-seen-modal을 true로 변경하여 로컬에 저장
+        localStorage.setItem('@have-seen-modal', 'false')
         close()
       },
       onRightButtonClick: async () => {
@@ -51,6 +45,7 @@ export default function AttendCountModal({ party }: { party: Card }) {
             'Content-Type': 'application/json',
           },
         })
+        //@have-seen-modal을 true로 변경하여 로컬에 저장
         localStorage.setItem('@have-seen-modal', 'true')
         close()
       },
