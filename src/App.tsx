@@ -14,6 +14,7 @@ import Map from './components/sections/Map'
 import Contact from './components/sections/Contact'
 import Share from './components/sections/Share'
 import Modal from './components/shared/Modal'
+import AttendCountModal from './components/AttendCountModal'
 
 const cx = classNames.bind(styles)
 
@@ -89,6 +90,7 @@ function App() {
         onLeftButtonClick={() => console.log('왼쪽클릭')}
         onRightButtonClick={() => console.log('오른쪽클릭')}
       /> */}
+      <AttendCountModal party={card} />
     </div>
   )
 }
