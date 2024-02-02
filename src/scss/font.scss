@@ -3,5 +3,6 @@
     src: 
         url("../assets/fonts/NanumGyuRiEuiIrGi.woff2") format("woff2"),
         url("../assets/fonts/NanumGyuRiEuiIrGi.woff") format("woff"),
-        url("../assets/fonts/NanumGyuRiEuiIrGi.ttf") format("truetype")
+        url("../assets/fonts/NanumGyuRiEuiIrGi.ttf") format("truetype");
+        font-display: fallback;
 }
