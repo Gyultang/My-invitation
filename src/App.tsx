@@ -1,6 +1,5 @@
 import classNames from 'classnames/bind'
 import styles from './App.module.scss'
-import FullScreenMessage from '@shared/FullScreenMessage'
 
 import Heading from './components/sections/Heading'
 import Video from './components/sections/Video'
@@ -20,11 +19,8 @@ import useParty from './hooks/useParty'
 const cx = classNames.bind(styles)
 
 function App() {
-  const { card, error } = useParty()
+  const { card } = useParty()
 
-  if (error) {
-    return <FullScreenMessage type="error" />
-  }
   if (card == null) {
     return null
   }
