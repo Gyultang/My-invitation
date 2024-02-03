@@ -50,6 +50,6 @@ export default function AttendCountModal({ party }: { party: Card }) {
         close()
       },
     })
-  }, [])
+  }, [open, close, party])
   return null
 }

@@ -37,7 +37,7 @@ export default function Share({
     window.Kakao.Share.sendDefault({
       objectType: 'feed',
       content: {
-        title: `${master}가 준비한 파티에 당신을 초대합니다!`,
+        title: '특별한 당신을 초대합니다!',
         description: `${format(parseISO(date), 'M월 d일 eeee aaa h시', { locale: ko })}`,
         imageUrl:
           'https://png.pngtree.com/background/20230401/original/pngtree-birthday-party-balloon-background-picture-image_2251829.jpg',

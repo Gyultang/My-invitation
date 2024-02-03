@@ -1,6 +1,13 @@
 import Modal from '@shared/Modal'
 import { createPortal } from 'react-dom'
-import { createContext, useContext, ComponentProps, useState } from 'react'
+import {
+  createContext,
+  useContext,
+  ComponentProps,
+  useState,
+  useCallback,
+  useMemo,
+} from 'react'
 
 type ModalProps = ComponentProps<typeof Modal>
 type ModaleOptions = Omit<ModalProps, 'open'> // ModalProps에서 open이 제외된 타입
@@ -20,17 +27,20 @@ export function ModalContext({ children }: { children: React.ReactNode }) {
   const [modalState, setModalState] = useState<ModalProps>(defaultValues)
 
   const $portal_root = document.getElementById('root-portal')
-  const open = (options: ModaleOptions) => {
+  const open = useCallback((options: ModaleOptions) => {
     setModalState({ ...options, open: true })
-  }
-  const close = () => {
+  }, [])
+  const close = useCallback(() => {
     setModalState(defaultValues)
-  }
+  }, [])
 
-  const values = {
-    open,
-    close,
-  }
+  const values = useMemo(
+    () => ({
+      open,
+      close,
+    }),
+    [open, close],
+  )
   return (
     <Context.Provider value={values}>
       {children}
