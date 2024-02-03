@@ -12,7 +12,7 @@ import Calendar from './components/sections/Calendar'
 import Map from './components/sections/Map'
 import Contact from './components/sections/Contact'
 import Share from './components/sections/Share'
-import Modal from './components/shared/Modal'
+import Modal from '@shared/Modal'
 import AttendCountModal from './components/AttendCountModal'
 
 import useParty from './hooks/useParty'
@@ -20,11 +20,8 @@ import useParty from './hooks/useParty'
 const cx = classNames.bind(styles)
 
 function App() {
-  const { card, loading, error } = useParty()
+  const { card, error } = useParty()
 
-  if (loading) {
-    return <FullScreenMessage type="loading" />
-  }
   if (error) {
     return <FullScreenMessage type="error" />
   }

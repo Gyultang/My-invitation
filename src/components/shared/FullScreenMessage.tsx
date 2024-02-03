@@ -29,7 +29,7 @@ function Ballon() {
     <svg
       className={cx('icon-ballon')}
       viewBox="0 0 128 128"
-      xmlns="http://www.w3.org/2000/svg"
+      // xmlns="http://www.w3.org/2000/svg"
     >
       <title />
       <g data-name="Ballon" id="eac945e7-497e-4702-940f-23af80b7aba8">
