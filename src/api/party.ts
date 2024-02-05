@@ -1,3 +1,3 @@
 export function getParty() {
-  return fetch('http://localhost:8888/party')
+  return fetch('https://trail-puzzle-sunscreen.glitch.me/party')
 }
