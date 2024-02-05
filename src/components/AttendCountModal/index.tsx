@@ -35,7 +35,7 @@ export default function AttendCountModal({ party }: { party: Card }) {
         if ($input.current == null) {
           return
         }
-        await fetch('http://localhost:8888/party', {
+        await fetch('https://trail-puzzle-sunscreen.glitch.me/party', {
           method: 'PUT', // 값을 업데이트해줘야함
           body: JSON.stringify({
             ...party,

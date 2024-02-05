@@ -12,6 +12,7 @@ export default function Video() {
         autoPlay={true}
         muted={true}
         loop={true}
+        playsInline={true}
         poster="/assets/mainposter.png"
       >
         <source src="/assets/main.mp4" type="video/mp4" />
