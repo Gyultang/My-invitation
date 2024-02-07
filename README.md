@@ -4,6 +4,7 @@
 - ESLint + Prettier
 - SCSS
 - Yarn Berry(pnp)
+- react query v3
 
 ### UI와 기능
 - 첫화면<br/>
